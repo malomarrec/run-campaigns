@@ -1,8 +1,7 @@
 #!/bin/sh -l
 
-#curl -L https://demo.sourcegraph.com/.api/src-cli/src_darwin_amd64 -o src
-curl -L https://www.google.com -o src
-chmod +x /usr/local/bin/src
+curl -L https://demo.sourcegraph.com/.api/src-cli/src_darwin_amd64 -o src
+chmod +x src
 
 
 # TODO: iterare over campaigns in checkout
