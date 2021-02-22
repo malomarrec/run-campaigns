@@ -12,3 +12,5 @@ export SRC_ACCESS_TOKEN=${{ secrets.SRC_ACCESS_TOKEN }}
 cd /github/workspace
 
 src campaigns apply -f my.campaign.yml
+
+echo "Done"
