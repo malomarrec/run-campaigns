@@ -8,6 +8,7 @@ chmod +x src
 # Launch campaigns
 export SRC_ENDPOINT=https://demo.sourcegraph.com
 echo $TEST_SECRET
+echo $SRC_ENDPOINT
 
 cd github/workspace
 
