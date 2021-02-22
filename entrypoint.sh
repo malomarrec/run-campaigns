@@ -7,8 +7,9 @@ chmod +x src
 # TODO: iterare over campaigns in checkout
 # Launch campaigns
 export SRC_ENDPOINT=https://demo.sourcegraph.com
-export SRC_ACCESS_TOKEN=${{secrets.SRC_ACCESS_TOKEN}}
-echo ${{secrets.TEST_SECRET}}
+echo ${{ secrets.TEST_SECRET }}
+export SRC_ACCESS_TOKEN=${{ secrets.SRC_ACCESS_TOKEN }}
+
 
 cd github/workspace
 
