@@ -8,8 +8,9 @@ chmod +x src
 # Launch campaigns
 export SRC_ENDPOINT=https://demo.sourcegraph.com
 echo $TEST_SECRET
+echo "Hello"
 echo $SRC_ENDPOINT
-
+ls
 cd github/workspace
 
 src campaigns apply -f my.campaign.yml
