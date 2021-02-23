@@ -1,18 +1,20 @@
 #!/bin/sh -l
 
+# Requirements:
+# Create a Github secret with key SRC_ACCESS_TOKEN and value a sourcegraph access token
+
 curl -L https://demo.sourcegraph.com/.api/src-cli/src_darwin_amd64 -o src
 chmod +x src
 
-
-# TODO: iterare over campaigns in checkout
-# Launch campaigns
 export SRC_ENDPOINT=https://demo.sourcegraph.com
-echo $TEST_SECRET
-echo "Hello"
-echo $SRC_ENDPOINT
-ls
-cd github/workspace
 
-src campaigns apply -f my.campaign.yml
+# Checking that SRC_ACCESS_TOKEN is defined
+if [[ -z "$SRC_ACCESS_TOKEN" ]]; then
+  echo "This action requires a SRC_ACCESS_TOKEN GitHub secret to be set"
+  exit 1
+fi
+
+
+src campaigns apply -f campaigns/my.campaign.yml
 
 echo "Done"
