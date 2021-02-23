@@ -14,7 +14,7 @@ if [[ -z "$SRC_ACCESS_TOKEN" ]]; then
   exit 1
 fi
 
-
+ls
 src campaigns apply -f campaigns/my.campaign.yml
 
 echo "Done"
