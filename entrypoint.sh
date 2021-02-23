@@ -16,6 +16,9 @@ fi
 
 cd ..
 tree
+ls -a
+cd ..
+ls -a
 
 src campaigns apply -f campaigns/my.campaign.yml
 
