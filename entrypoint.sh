@@ -3,8 +3,8 @@
 # Requirements:
 # Create a Github secret with key SRC_ACCESS_TOKEN and value a sourcegraph access token
 
-# curl -L https://demo.sourcegraph.com/.api/src-cli/src_darwin_amd64 -o src
-# chmod +x src
+curl -L https://demo.sourcegraph.com/.api/src-cli/src_darwin_amd64 -o src
+chmod +x src
 
 export SRC_ENDPOINT=https://demo.sourcegraph.com
 
