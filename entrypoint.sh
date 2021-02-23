@@ -16,11 +16,12 @@ fi
 
 tree -o res.txt
 cat res.txt
+src campaigns apply -f campaigns/my.campaign.yml
 
 cd ..
 tree -o res2.txt
 cat res2.txt
 
-src campaigns apply -f campaigns/my.campaign.yml
+
 
 echo "Done"
