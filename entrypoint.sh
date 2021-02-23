@@ -21,10 +21,6 @@ cd ..
 tree -o res2.txt
 cat res2.txt
 
-cd ..
-tree -o res2.txt
-cat res2.txt
-
 src campaigns apply -f campaigns/my.campaign.yml
 
 echo "Done"
