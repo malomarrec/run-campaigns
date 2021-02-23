@@ -2,7 +2,8 @@
 FROM alpine:3.10
 
 RUN apk add --no-cache \
-    curl
+    curl \
+    tree
 
 RUN curl -L https://demo.sourcegraph.com/.api/src-cli/src_darwin_amd64 -o src
 RUN chmod +x src
