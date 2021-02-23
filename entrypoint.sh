@@ -14,11 +14,16 @@ if [[ -z "$SRC_ACCESS_TOKEN" ]]; then
   exit 1
 fi
 
+tree -o res.txt
+cat res.txt
+
 cd ..
-tree
-ls -a
+tree -o res2.txt
+cat res2.txt
+
 cd ..
-ls -a
+tree -o res2.txt
+cat res2.txt
 
 src campaigns apply -f campaigns/my.campaign.yml
 
