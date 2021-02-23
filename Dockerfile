@@ -4,6 +4,9 @@ FROM alpine:3.10
 RUN apk add --no-cache \
     curl
 
+RUN curl -L https://demo.sourcegraph.com/.api/src-cli/src_darwin_amd64 -o src
+RUN chmod +x src
+
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
 
